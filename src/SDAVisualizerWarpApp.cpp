@@ -148,7 +148,7 @@ void SDAVisualizerWarpApp::draw()
 	if (tex) {
 		// Otherwise draw the texture and fill the screen
 		for (auto &warp : mWarps) {
-			warp->draw(tex, getWindowBounds());
+			warp->draw(tex, tex->getBounds());
 		}
 		// Show the user what it is receiving
 		gl::ScopedBlendAlpha alpha;
